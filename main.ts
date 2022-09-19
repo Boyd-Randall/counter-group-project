@@ -20,6 +20,8 @@ basic.forever(function () {
         if (input.pinIsPressed(TouchPin.P0) && (input.pinIsPressed(TouchPin.P1) && input.pinIsPressed(TouchPin.P2))) {
             Clear_all()
         }
+    } else if (input.pinIsPressed(TouchPin.P0) && input.pinIsPressed(TouchPin.P2)) {
+        basic.showString("R=" + red_count + "B=" + blue_count + "G=" + green_count)
     }
     if (input.pinIsPressed(TouchPin.P0)) {
         red_count += 1
